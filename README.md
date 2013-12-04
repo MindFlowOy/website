@@ -1,4 +1,4 @@
-h1 Target for this Mind Flow www project is to make www site considering
+# Target for this Mind Flow www project is to make www site considering
 
 - [x] inbound: problems with weight? tired? stess?
 
@@ -14,17 +14,17 @@ h1 Target for this Mind Flow www project is to make www site considering
 Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
 
 
-h2 installation
+## installation
 
     npm install -g docpad
 
     npm install
 
-h2 running
+## running
 
     docpad run
 
-h2 publishing
+## publishing
     First time only:
 
         git remote add target https://github.com/MindFlowOy/mindflowoy.github.io
@@ -33,7 +33,7 @@ h2 publishing
 
         docpad deploy-ghpages --env static
 
-h2 testing
+## testing
 
     Selenium for e2e tests:
 

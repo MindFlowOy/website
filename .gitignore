@@ -6,9 +6,10 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.db
 
 node_modules
 npm-debug.log
 
 test/out/
-out/
+out
