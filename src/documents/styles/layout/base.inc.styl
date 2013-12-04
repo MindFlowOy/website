@@ -1,0 +1,173 @@
+@charset "UTF-8"
+
+// Angular
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide
+  display none !important
+
+ng\:form
+  display block
+
+.ng-animate-start
+    border-spacing 1px 1px; -ms-zoom:1.0001
+.ng-animate-active
+    border-spacing 0px 0px; -ms-zoom:1
+
+
+// Layout
+
+
+// Mind Flow textual style
+mind()
+    color c-mind
+    //border-right 1px solid c-flow
+    //border-bottom 1px solid c-flow
+    background c-flow
+    font-family kaushan
+    text-decoration none
+    text-align right
+    padding-left 0.5em
+    padding-right 0.2em
+
+flow()
+    color c-flow
+    //border-right 1px solid c-flow
+    //border-bottom 1px solid c-flow
+    background c-mind
+    font-family kaushan
+    font-style normal
+    text-decoration none
+    padding-left 0px
+    padding-right 0.5em
+
+.mind
+    display inline
+    mind()
+.flow
+    display inline
+    flow()
+
+h1
+    .mind, .flow
+        font-size: ms(20)
+
+// Base layout
+html, body
+    height 100%
+    background site_background
+
+header#top
+    //opacity 0.7 not working
+    background site_background
+    fixed top left
+    z-index 100
+    overflow hidden
+    height header-height
+    width 100%
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+    > div
+        center(site_max_width, site_padding)
+    a.logo
+        absolute: top left
+        text-decoration none
+    .language
+        absolute top right
+        right 20px
+        padding 0
+        text-align center
+        a
+            display inline-block
+            padding 5px
+            background c-mind
+            color c-flow
+            width 40px
+            &.selected
+                background c-flow
+                color c-mind
+                pointer-events none
+                cursor default
+                text-decoration none
+    nav
+        font-family helvetica
+        //font-size: ms(16)
+        //line-height: ms(20)
+        column(3/4, offset: 1/4)
+        overflow: hidden
+        margin-top 35px
+        a
+            // max 5 menuitems
+            text-transform uppercase
+            column(1/5 3/4)
+            color black
+            text-decoration none
+            text-align center
+        a:hover
+            color: blue
+            text-decoration uderline
+        a.selected
+            color c-flow
+            pointer-events none
+            cursor default
+footer
+    width 100%
+    background site_background
+    color  c-flow
+    text-align center
+    line-height 25px
+    margin-top 25px
+    a
+        text-decoration none
+
+
+aside
+    column(1/4)
+    a
+        simple-button()
+        display block
+        margin-bottom 10px
+
+
+
+// Form
+form
+    forms()
+    border-radius 5px
+    background yellow
+    margin 20px auto
+    padding-top 40px
+
+    .field
+        field()
+        text-align center
+        width auto
+
+    label
+        label()
+
+    input[type='text']
+        input()
+
+    input[type='submit']
+        simple-button(light-blue, large)
+        color white
+        margin 20px auto
+
+
+// Mobile
+bp()
+
+
+header#top nav, aside, article
+    stack()
+
+header#top
+    position static
+    height 0
+    nav
+        display none
+    //column(1/2, cycle:2)
+
+
+header#top nav a, aside
+    margin-bottom 10px
+
+endbp()

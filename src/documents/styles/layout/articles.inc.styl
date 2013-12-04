@@ -1,0 +1,135 @@
+
+.full-bg
+    background-size cover
+    min-height 75%
+    &.slogan
+        background url(/img/slogan-bg.jpg) no-repeat center center fixed
+
+.content
+    center(75%)
+    .c1-2
+        column(1/2)
+        margin-right 0
+    .c1-1
+        column(1/1)
+    i.fa.fa.some
+        color blue
+        font-size 25px
+        padding-right 0.5em
+    i.fa.fa
+        color green
+        padding-right 0.5em
+
+
+.panel
+    padding 20px 0
+    &.slogan
+        background rgba(255, 255, 255, .5)
+        h1, h2, h3, h4, h5
+            color purple
+
+
+
+.c1-2.bubble-l
+        bubble('right', light)
+        margin: 0px auto 20px
+.c1-2.bubble-r
+        bubble('left', light)
+        margin: 30px auto 0px
+
+.call-to-action
+    simple-button(light-blue, large)
+    color white
+    margin 40px auto
+
+img.mm
+    height: 250px
+
+
+section
+    height 100%
+    article:nth-child(1)
+        padding-top header-height
+        margin 5% auto 0
+        border-top none
+    article
+        min-height 50%
+        z-index 0
+        transform translateZ( 0 )
+        transition all 1s ease
+        backface-visibility hidden
+        center(site_max_width, site_padding)
+        text-align center
+        > header
+            padding-top (header-height/2)
+            border-top: 1px solid light-blue
+            h1
+                text-align center
+
+        .tags
+            column(1/1)
+            background site_background !important
+
+.contacts
+    > p:first-child
+        padding-top 40px
+
+
+.contact
+    margin-bottom 40px
+    .title
+        font-weight bold
+    img
+        width 200px
+        height 200px
+        border-radius 50%
+
+
+// #content-3
+//      p
+//         area(color= simple-gradient(white strength = 10%))
+
+// #content-4
+//      .contact
+//         area(color= simple-gradient(c4, strength = -10%))
+
+
+// 4 columns
+//@media (max-width: 1024px)
+
+
+// 3 columns
+//@media (max-width: 768px)
+
+// Small tablet
+@media (max-width: 640px)
+    .content
+        .contacts.c1-2
+            column(1/1)
+            p:first-child
+                padding-top 10px
+
+//Mobile
+@media (max-width: 480px)
+    .full-bg
+        &.slogan
+            background none
+    .content
+        .c1-2
+            column(1/1)
+
+// Mobile
+bp()
+
+section
+    border-radius 0
+
+article
+    div
+        p
+            float: none
+
+.content
+    center(100%)
+
+endbp()

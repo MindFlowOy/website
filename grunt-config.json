@@ -1,0 +1,32 @@
+{
+    "concat": {
+        "options": {
+            "separator": ";"
+        },
+        "dist": {
+            "src": ["out/scripts/main.js"
+            , "out/scripts/common/ctrl/base.js"
+            , "out/scripts/common/drctv/scroll-to.js"
+            , "out/scripts/main-bootstrap.js"
+            , "out/js/vendor/lodash.js"
+            , "out/js/vendor/raf.js"],
+            "dest": "out/scripts/all.js"
+        }
+    },
+    "uglify": {
+        "options": {
+            "banner": ""
+        },
+        "dist": {
+            "files": {
+               "out/scripts/all.min.js" : ["<%= concat.dist.dest %>", "out/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js", "out/js/vendor/placeholders.min.js"]
+            }
+        }
+    },
+    "cssmin": {
+        "minify": {
+            "src": ["out/styles/index.css"],
+            "dest": "out/styles/all.css"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+script(type="text/javascript")
+    var submitted=false;
+
+iframe#hidden_iframe(name="hidden_iframe", onload="if(submitted){window.location='/';}", style="display: none;")
+
+
+form(action="https://docs.google.com/a/mindflow.fi/forms/d/1a-YRLSKkKW0Swz3tA1J_UqEdIAKeCBdIXCqIhNmv3Qc/formResponse?embedded=true", method="POST", id="ss-form", onsubmit="submitted=true;", target="hidden_iframe" )
+
+    p #{header}
+
+    .field
+        //- label(for="entry_1805485991", aria-hidden) #{nameLabel}:
+        input#entry_1805485991( type="text", name="entry_1805485991", value="", dir="auto", aria-label="Your name", title="Enter Your name", placeholder="#{nameLabel}" )
+    .field
+        //- label( for="entry_1110524157", aria-hidden ) #{emailLabel}:
+        input#entry_1110524157( type="text", name="entry.1110524157", value="", dir="auto", aria-label="Your email address", aria-required="true", required="", title="Enter Your email address", placeholder="#{emailLabel}" )
+    if !messageContent
+        .field
+            //- label( for="entry_1354001109", aria-hidden ) #{msgLabel}:
+            textarea#entry_1354001109( type="text", name="entry.1354001109", rows="5", cols="0", dir="auto", aria-label="Your message", aria-required="true", required="", title="Enter Your message", placeholder="#{msgLabel}" )
+    else
+        input#entry_1354001109( type="hidden", name="entry.1354001109", value="[#{messageContent}]" )
+
+    input(type="hidden", name="draftResponse", value="[]")
+    input(type="hidden", name="pageHistory", value="0")
+    input(type="hidden", name="fbzx", value="8353076610828132679")
+
+    if submitLabel
+        input(type='submit', name="submit", value='#{submitLabel}')
+    else
+        input(type='submit', name="submit", value='Ok')
+

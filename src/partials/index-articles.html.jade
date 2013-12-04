@@ -1,0 +1,11 @@
+ //- Show rendered content of each article (see articlees in '/index-articles' -directory)
+each article, index in getCollection(key).toJSON()
+
+    if article.bg
+        div(class = 'full-bg ' + article.bg)
+            article(id='content-#{index+1}')
+                |!{article.contentRendered}
+
+    else
+        article(id='content-#{index+1}')
+            |!{article.contentRendered}

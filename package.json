@@ -1,0 +1,45 @@
+{
+  "name": "no-skeleton.docpad",
+  "version": "0.1.0",
+  "description": "New DocPad project without using a skeleton",
+  "engines": {
+    "node": "0.10",
+    "npm": "1.3"
+  },
+  "dependencies": {
+    "docpad": "~6.57.0",
+    "docpad-plugin-marked": "~2.1.2",
+    "docpad-plugin-jade": "~2.6.1",
+    "docpad-plugin-coffeelint": "~2.1.1",
+    "docpad-plugin-partials": "~2.8.1",
+    "docpad-plugin-text": "~2.3.2",
+    "docpad-plugin-coffeescript": "~2.2.3",
+    "docpad-plugin-axis": "~2.0.1",
+    "docpad-plugin-stylus": "~2.5.0",
+    "docpad-plugin-umd": "~2.1.0",
+    "docpad-plugin-grunt": "~2.0.5",
+    "docpad-plugin-ignoreincludes": "~2.0.0",
+    "docpad-plugin-ghpages": "~2.4.0"
+  },
+  "main": "node_modules/docpad/bin/docpad-server",
+  "scripts": {
+    "test": "scripts/unit.sh",
+    "start": "node_modules/docpad/bin/docpad-server"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "~2.5.3",
+    "phantomjs": "~1.9",
+    "karma": "~0.10",
+    "karma-junit-reporter": "~0.1",
+    "karma-jasmine": "~0.1",
+    "karma-mocha": "*",
+    "karma-firefox-launcher": "*",
+    "protractor": "*",
+    "karma-osx-reporter": "0.0.4",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7"
+  }
+}

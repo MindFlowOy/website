@@ -1,0 +1,44 @@
+---
+layout: index-article
+title: Contacts
+tags: ['Address', 'email', 'phone', 'social media']
+articleOrder: 5
+---
+
+.c1-2.contacts
+    p
+        a(href='http://map-generator.net/en/maps/', title='Map to MindFlow HQ', target='map')
+            i.fa.fa-map-marker
+        br
+        |Paavo Nurmen tie 1
+        br
+        |FIN-00250 HELSINKI
+        br
+        |Finland
+
+
+    p
+        i.fa.fa-envelope-o
+        br
+        |contact (@) mindflow.fi
+
+
+    p
+        i.fa.fa-phone
+        br
+        |+358 40
+
+    p
+        br
+        a(href='http://www.linkedin.com/company/', title='MindFlow @ LinkedIn', target='some')
+            i.some.fa.fa-linkedin
+        a(href='http://www.youtube.com/channel/', title='MindFlow @ Youtube', target='some')
+            i.some.fa.fa-youtube
+        a(href='https://twitter.com/', title='MindFlow @ Twitter', target='some')
+            i.some.fa.fa-twitter
+        a(href='https://www.facebook.com/', title='MindFlow @ Facebook', target='some')
+            i.some.fa.fa-facebook
+
+
+.c1-2.contacts
+    != partial( 'contact-us', {header: 'Feel free to send us a message!', nameLabel: 'Your name', emailLabel: 'Your email address', msgLabel:'Your message'} )

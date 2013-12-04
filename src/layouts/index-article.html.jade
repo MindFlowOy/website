@@ -1,0 +1,11 @@
+
+if document.title
+    header
+        h1
+            |#{document.title}
+
+        if document.tags
+            p.tags!= document.tags.join(' | ')
+
+
+.content!= content

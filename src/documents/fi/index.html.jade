@@ -1,0 +1,21 @@
+---
+title: Mind Flow
+layout: index
+---
+
+header#top
+    .language
+        a.selected(href='/fi/', title='Vaihda kieli suomeksi', data-ng-click="$route.reload()", target="_self") FI
+        a(href='/en/', title='Change language to English', data-ng-click="$route.reload()", target="_self") EN
+    != partial('index-menu', {key: 'articlesFi'})
+
+
+//- Section of articles
+section(data-ng-controller='BaseCtrl')
+    != partial('index-articles', {key: 'articlesFi'})
+
+    footer#bottom
+        a.logo(href="/")
+            span.mind Mind
+            span.flow Flow
+        |© 2013, Kaikki oikeudet pidätetään

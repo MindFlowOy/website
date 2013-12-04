@@ -1,0 +1,73 @@
+!!! 5
+//if lt IE 7
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignored">
+//if IE 7
+    <html class="no-js lt-ie9 lt-ie8", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignored>
+//if IE 8
+    <html class="no-js lt-ie9", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignored">
+// [if gt IE 8] <!
+html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignored")
+      // <![endif]
+
+      head
+            //- swap languages if en is not default
+            link(rel="alternate", hreflang="x-default", href="/")
+            link(rel="alternate", hreflang="fi", href="/fi/index.html")
+
+            link(rel="shortcut icon", href="favicon.ico")
+
+            base(href="/")
+            meta(charset='utf-8')
+            meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+            title!= document.title
+            //- Safari full screen options
+            meta(name="apple-mobile-web-capable", content="yes")
+            meta(name="apple-mobile-web-status-bar-style", content="black-translucent")
+
+            //- Set the viewport width to device width for mobile
+            meta(content='width=device-width, initial-scale=1,', name='viewport') or:
+            //- meta(content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no', name='viewport')
+
+            != getBlock("meta").toHTML()
+
+            //- Font awesome
+            //-link(href='/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+            link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
+            //- Google fonts
+            link(href='https://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext', rel='stylesheet')
+
+            //- Main css
+            //-!= getBlock("styles").add(["/css/animation.css", "/styles/index.css"]).toHTML()
+            != getBlock("styles").add(site.styles).toHTML()
+            //-!= getBlock("styles").add(getGruntedStyles()).toHTML()
+
+            //if lt IE 9
+                  script(src='/js/vendor/selectivizr-1.0.2.min.js')
+
+            //- angular
+            script(src='/js/vendor/angular/angular.js')
+            script(src='/js/vendor/angular/angular-route.js')
+
+      body
+
+            //if lt IE 9
+                  .browsehappy
+                      p
+                          | You are using an
+                          strong outdated
+                          | browser. Please
+                          a(href='http://browsehappy.com/', target='_blank') upgrade your browser
+                          | or
+                          a(href='http://www.google.com/chromeframe/?redirect=true', target='_blank') activate Google Chrome Frame
+                          | to improve your experience.
+
+            != content
+
+            //- if lt IE 9
+            //-     != getBlock("scripts").add(["/scripts/main.js"...]).toHTML()
+
+            // [if gt IE 8] <!
+            != getBlock("scripts").add(site.scripts).toHTML()
+            // <![endif]
+
