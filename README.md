@@ -26,9 +26,7 @@ Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
 
 ## publishing
     First time only:
-
-        git remote add target https://github.com/MindFlowOy/mindflowoy.github.io
-
+        git remote add target git@github.com:MindFlowOy/mindflowoy.github.io.git
     Then
 
         docpad deploy-ghpages --env static
