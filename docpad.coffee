@@ -26,22 +26,6 @@ docpadConfig =
 
 
     # =================================
-    #Plugins
-    plugins:
-        grunt:
-            gruntTasks: ["default"]
-
-        livereload:
-            enabled: true
-
-        ignoreincludes:
-            ignoreExtensions: ['inc', 'abc']
-
-        ghpages:
-            deployRemote: 'target'
-            deployBranch: 'master'
-
-    # =================================
     # Template Configuration
 
     # Template Data
@@ -59,7 +43,7 @@ docpadConfig =
                 meta:
                     description: "Meta description in English"
 
-            # French
+            # Finnish
             fi:
                 _name: "suomi"
                 _param: "fi_FI"
@@ -116,12 +100,7 @@ docpadConfig =
             # The website author's email
             email: "vli@iki.fi"
 
-            # Styles
-            #styles: [ "/styles/index.css" ]
-            styles: [ "/styles/all.css" ]
 
-            # Javascripts
-            scripts: [ "/scripts/all.min.js" ]
 
             #"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
 
@@ -188,15 +167,49 @@ docpadConfig =
     env: null  # default
 
     environments:
-        development: # change the name here if you have other environments
+        development:
+            templateData:
+                site:
+                    styles: [ "/styles/index.css" ]
+                    scripts: [ "/scripts/main.js"
+                    , "/scripts/common/ctrl/base.js"
+                    , "/scripts/common/drctv/scroll-to.js"
+                    , "/scripts/main-bootstrap.js"
+                    , "/js/vendor/lodash.js"
+                    , "/js/vendor/raf.js"
+                    ,"/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"
+                    , "/js/vendor/placeholders.min.js" ]
+
             plugins:
                 livereload:
                     enabled: true
+                 grunt:
+                    enabled: false
+                ignoreincludes:
+                    ignoreExtensions: ['inc', 'abc']
+                ghpages:
+                    enabled: false
 
-        staging: # change the name here if you have other environments
+        static:
+            templateData:
+                site:
+                    styles: [ "/styles/index.css" ]
+                    scripts: [ "/scripts/all.min.js" ]
+
             plugins:
                 livereload:
                     enabled: false
+
+                grunt:
+                    gruntTasks: ["default"]
+
+                ignoreincludes:
+                    ignoreExtensions: ['inc', 'abc']
+
+                ghpages:
+                    deployRemote: 'target'
+                    deployBranch: 'master'
+
 
 
 # Export the DocPad Configuration

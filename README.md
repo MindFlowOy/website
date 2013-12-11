@@ -22,7 +22,7 @@ Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
 
 ## running
 
-    docpad run
+    docpad run [-p 9999]
 
 ## publishing
     First time only:
@@ -44,11 +44,11 @@ Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
 
                 ./selenium/start
 
-    Then
+            Then
 
-        ./scripts/unit.sh
+                ./scripts/unit.sh
 
-        ./scripts/e2e.sh
+                ./scripts/e2e.sh
 
 
 
