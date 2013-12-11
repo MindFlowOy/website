@@ -25,6 +25,11 @@ docpadConfig =
             }, [articleOrder:1, title:1])
 
 
+    plugins:
+        ghpages:
+            deployRemote: 'target'
+            deployBranch: 'master'
+
     # =================================
     # Template Configuration
 
@@ -187,8 +192,6 @@ docpadConfig =
                     enabled: false
                 ignoreincludes:
                     ignoreExtensions: ['inc', 'abc']
-                ghpages:
-                    enabled: false
 
         static:
             templateData:
@@ -205,10 +208,6 @@ docpadConfig =
 
                 ignoreincludes:
                     ignoreExtensions: ['inc', 'abc']
-
-                ghpages:
-                    deployRemote: 'target'
-                    deployBranch: 'master'
 
 
 
