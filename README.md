@@ -11,8 +11,25 @@
 - [] outbound: our contacts, pricing etc
 
 
-Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
+At the time beeing this more like skeleton of web project, but it should be easy and fast to add new pages/functionality.
 
+## There are many technologies involved to this project:
+
+- Docpad and its plugins as main 'web framework'
+
+- Grunt for JS/CSS/image optimation
+
+- Angular as a JavaScript framework and Karma and Protractor for unit/E2E testing
+
+- CoffeeScript for JavaScript generation
+
+- Jade as HTML template language
+
+- Stylus for CSS preprosessing
+
+- And of course libaries like Lodash, Modernizer, some shims etc
+
+So not the most simplest stack for static web pages - but once you know them you can't live without.
 
 ## installation
 
