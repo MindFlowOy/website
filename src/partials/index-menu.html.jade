@@ -8,5 +8,7 @@ div
         each article, index in getCollection(key).toJSON()
             //-a(ng-click="scroll('content-#{index+1}')") #{article.title}
             //-a(href="#content-#{index+1}" data-ng-click="scroll('content-#{index+1}')") #{article.title}
-            if article.title
+            if article.title == 'MirrorMonkey'
+                a.mirrormonkey(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}') #{article.title}
+            else if article.title
                 a(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}') #{article.title}
