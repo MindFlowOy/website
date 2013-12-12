@@ -35,7 +35,7 @@
                 "expand": true,
                 "cwd": "src/files/img/",
                 "src": ["**/*.{png,jpg,gif}"],
-                "dest": "out/img/"
+                "dest": "src/files/img/"
         }]
     }
 }
