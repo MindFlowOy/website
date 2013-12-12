@@ -62,7 +62,6 @@ section
 
     article
         min-height 50%
-        margin-bottom 30px
         z-index 0
         transform translateZ( 0 )
         transition all 1s ease
@@ -71,19 +70,28 @@ section
         text-align center
         > header
             padding-top (header-height/2)
-            border-top: 1px solid light-green
+            //border-top: 1px solid light-green
             h1
                 text-align center
 
         .tags
             column(1/1)
-            background site_background !important
+            //background site_background !important
 
 .contacts
+    >p
+        padding-bottom 20px
+    color light-green
+    img.logo
+        height 0
+    i.fa.fa, a, a:hover
+        color lighten(green, 20%)
+        padding-bottom 10px
+    i.fa.fa.some
+        color lighten(action-c, 30%)
     margin-bottom 100px
     font-size large
-    > p:first-child
-        padding-top 50px
+
 
 .contact
     margin-bottom 40px
@@ -103,9 +111,13 @@ section
 //      p
 //         area(color= simple-gradient(white strength = 10%))
 
-// #content-4
-//      .contact
-//         area(color= simple-gradient(c4, strength = -10%))
+#content-3
+    color black
+    min-height 90%
+    background simple-gradient(#969061, strength = 30%)
+
+#content-5
+    background simple-gradient(#996146, strength = 30%)
 
 
 // 4 columns
