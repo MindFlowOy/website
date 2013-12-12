@@ -18,7 +18,9 @@
     i.fa.fa.some
         color action-c
         font-size 20px
-        padding-right 0.5em
+        padding-right 0.25em
+        position relative
+        top 2px
 
     i.fa.fa
         color green
@@ -84,11 +86,18 @@ section
     color light-green
     img.logo
         height 0
-    i.fa.fa, a, a:hover
+    i.fa.fa
         color lighten(green, 20%)
         padding-bottom 10px
-    i.fa.fa.some
+    a, i.fa.fa.some
+        text-decoration none
         color lighten(action-c, 30%)
+    a:hover
+        color lighten(action-c, 50%)
+        text-decoration underline
+        i.fa.fa.some
+            color lighten(action-c, 50%)
+
     margin-bottom 100px
     font-size large
 
@@ -105,7 +114,11 @@ section
         height 200px
         border-radius 50%
         border 5px solid light-green
-
+    a
+        text-decoration none
+        color action-c
+    a:hover
+        text-decoration underline
 
 // #content-3
 //      p
