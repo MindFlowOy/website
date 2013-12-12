@@ -52,7 +52,13 @@ So not the most simplest stack for static web pages - but once you know them you
         git remote add target git@github.com:MindFlowOy/mindflowoy.github.io.git
 
     To deploy github
-        docpad generate --env static
+
+        First optimize JavaScript, CSS and images by running
+
+            grunt
+
+        Then deploy by
+
         docpad deploy-ghpages --env static
 
     And then browse to  http://mindflowoy.github.io/
