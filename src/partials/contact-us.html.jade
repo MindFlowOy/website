@@ -10,14 +10,14 @@ form(action="https://docs.google.com/a/mindflow.fi/forms/d/1a-YRLSKkKW0Swz3tA1J_
 
     .field
         //- label(for="entry_1805485991", aria-hidden) #{nameLabel}:
-        input#entry_1805485991( type="text", name="entry_1805485991", value="", dir="auto", aria-label="Your name", title="Enter Your name", placeholder="#{nameLabel}" )
+        input#entry_1805485991( type="text", name="entry_1805485991", value="", dir="auto", role="textbox", aria-label="Your name", title="Enter Your name", placeholder="#{nameLabel}" )
     .field
         //- label( for="entry_1110524157", aria-hidden ) #{emailLabel}:
-        input#entry_1110524157( type="text", name="entry.1110524157", value="", dir="auto", aria-label="Your email address", aria-required="true", required="", title="Enter Your email address", placeholder="#{emailLabel}" )
+        input#entry_1110524157( type="text", name="entry.1110524157", value="", dir="auto", role="textbox", aria-label="Your email address", aria-required="true", required="", title="Enter Your email address", placeholder="#{emailLabel}" )
     if !messageContent
         .field
             //- label( for="entry_1354001109", aria-hidden ) #{msgLabel}:
-            textarea#entry_1354001109( type="text", name="entry.1354001109", rows="5", cols="0", dir="auto", aria-label="Your message", aria-required="true", required="", title="Enter Your message", placeholder="#{msgLabel}" )
+            textarea#entry_1354001109( type="text", name="entry.1354001109", rows="5", cols="0", dir="auto", role="textbox", aria-multiline="true", aria-label="Your message", aria-required="true", required="", title="Enter Your message", placeholder="#{msgLabel}" )
     else
         input#entry_1354001109( type="hidden", name="entry.1354001109", value="[#{messageContent}]" )
 

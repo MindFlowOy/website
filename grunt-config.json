@@ -28,5 +28,15 @@
             "src": ["out/styles/index.css"],
             "dest": "out/styles/all.css"
         }
+    },
+    "imagemin": {
+        "dynamic": {
+            "files": [{
+                "expand": true,
+                "cwd": "src/files/img/",
+                "src": ["**/*.{png,jpg,gif}"],
+                "dest": "out/img/"
+        }]
     }
+}
 }
