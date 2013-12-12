@@ -4,11 +4,11 @@ div
     a.logo(href="#content-1" data-mf-scroll-to='content-1')
         img(src="/img/yy-mf-100.svg"  onerror="this.onerror=null; this.src='/img/yy-mf-100.png'" alt="MindFlow logo")
     //- Nav links that should work same way with and without js turned on
-    nav
+    nav(role="menubar")
         each article, index in getCollection(key).toJSON()
             //-a(ng-click="scroll('content-#{index+1}')") #{article.title}
             //-a(href="#content-#{index+1}" data-ng-click="scroll('content-#{index+1}')") #{article.title}
             if article.title == 'MirrorMonkey'
-                a.mirrormonkey(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}') #{article.title}
+                a.mirrormonkey(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}', role="menuitem") #{article.title}
             else if article.title
-                a(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}') #{article.title}
+                a(href="#content-#{index+1}" data-mf-scroll-to='content-#{index+1}', role="menuitem") #{article.title}

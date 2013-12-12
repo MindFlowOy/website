@@ -11,10 +11,10 @@ header#top
 
 
 //- Section of articles
-section(data-ng-controller='BaseCtrl')
+section(data-ng-controller='BaseCtrl', role="main")
     != partial('index-articles', {key: 'articlesFi'})
 
-    footer#bottom
+    footer#bottom(role='contentinfo')
         a.logo(href="/")
             span.mind Mind
             span.yingyang ☯
