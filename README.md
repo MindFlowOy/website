@@ -24,6 +24,12 @@ Hubspot's Marketing Gardner [software] [http://www.hubspot.com/].
 
     docpad run [-p 9999]
 
+
+## editing
+
+    look editable content from /src/documents/index-articles/[en|fi]-directory
+    images are under /src/files/img-directory
+
 ## publishing
     First time only:
         git remote add target git@github.com:MindFlowOy/mindflowoy.github.io.git
