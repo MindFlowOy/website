@@ -1,6 +1,6 @@
 # Target for this Mind Flow www project is to make www site considering
 
-- [x] inbound: problems with weight? tired? stess?
+- [x] inbound: problems with weight? tired? stress?
 
 - [x] collecting leads
 
@@ -53,9 +53,9 @@ So not the most simplest stack for static web pages - but once you know them you
 
     To deploy github
 
-        First optimize JavaScript, CSS and images by running
+        First optimize JavaScript, CSS and images (if any changed) by running
 
-            grunt
+        grunt
 
         Then deploy by
 
