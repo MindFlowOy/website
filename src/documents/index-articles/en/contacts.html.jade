@@ -5,28 +5,40 @@ tags: ['Address', 'email', 'phone', 'social media']
 articleOrder: 5
 ---
 
-.c1-1.contacts
-    p
-        a(href='http://map-generator.net/en/maps/', title='Map to MindFlow HQ', target='map')
-            i.fa.fa-map-marker
+.c1-1.contacts(itemscope, itemtype='http://schema.org/Organization')
+    img.logo(src='/img/yy-mf-100.svg', onerror='this.onerror=null; this.src="/img/yy-mf-100.png" ', alt='MindFlow logo', itemprop='logo')
+    p.name(itemprop='name') MindFlow Ltd
+    p(itemprop='address', itemscope, itemtype='http://data-vocabulary.org/Address' )
+        &nbsp;
+        i.fa.fa-map-marker
         br
-        |Atomitie 1
+        span(itemprop='streetAddress') Atomitie 1
         br
-        |FIN-00370 HELSINKI
+        span(itemprop='postalCode') FIN-00370 HELSINKI
         br
-        |Finland
+        span(itemprop='countryName') Finland
+        br
+        div(itemprop='location')
+            p(itemscope, itemtype='http://schema.org/Place')
+                a(href='http://map-generator.net/en/maps/159442', title='Map to MindFlow HQ', target='map', itemprop='map') Map&raquo;
+                div(itemprop='geo')
+                    p(itemscope, itemtype='http://schema.org/GeoCoordinates')
+                        span(property='latitude', content='60.223258')
+                        span(property='longitude', content='24.867028')
 
 
     p
+        &nbsp;
         i.fa.fa-envelope-o
         br
-        |contact (@) mindflow.fi
+        span(itemprop='email') contact (@) mindflow.fi
 
 
     p
+        &nbsp;
         i.fa.fa-phone
         br
-        |+358 (0)400 954 273
+        span(itemprop='telephone') +358 (0)400 954 273
 
     p
         br

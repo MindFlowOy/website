@@ -33,10 +33,16 @@ tags: ['Free trial coming soon to the App Store and Google play Apps']
 .c1-1
     img.mm.woman(src='/img/nainen-suru.png', alt='Desperate woman')
 
-.c1-1
-    h2
-        |Launch
-    p
-        |If you answered 'yes' to any of the questions above, then you should be happy to hear that we are laying out the foundation of Mirror Monkey app for solving your wellbeing problems.
+.c1-1(itemscope, itemtype='http://data-vocabulary.org/Product')
 
+    h2
+        span(itemprop='name') MirrorMonkey
+        |&nbsp;launch
+    p(itemprop='description') If you answered 'yes' to any of the questions above, then you should be happy to hear that we are laying out the foundation of MirrorMonkey application for solving your wellbeing problems.
+    p(itemprop='audience') MirrorMonkey will be created for ordinary people who have difficulties in keeping exercise and eating, as well as work and relaxation in a balance.
+    p There are many applications focusing a narrow aspect of well-being -such as:
+        span(itemprop='isSimilarTo') &nbsp; Sports Tracker, Food Substitutes, Anti-Depression App jne.
+        span &nbsp;MirrorMonkey differs from the ones listed above in that MirrorMonkey aims at a holistic well-being and self-knowledge.
+    p The trial version is planned to be released
+        time(itemprop='releaseDate' datetime="2014-04-01") beginning of March.
     != partial( 'contact-us', {header: 'I\'ll like to have free trial of Mirror Monkey app, so add me to the beta launch list!', nameLabel: 'Your name', emailLabel: 'Your email address', messageContent: 'Joining to the trial group', submitLabel:'Order free trial'} )

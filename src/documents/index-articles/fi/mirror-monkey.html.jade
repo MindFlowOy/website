@@ -35,9 +35,14 @@ tags: ['Ilmainen kokeiluversio tulossa pian App Storeen and Google play Sovelluk
 
 .c1-1
     h2
-        |Julkaisu
-    p
-        |Jos vastasit myöntävästi yhteenkään ylläolevista kysymyksistä, niin sinua ilahduttanee tieto siitä, että teemme paraikaa Mirror Monkey sovellusta hyvinvointiongelmiesi ratkaisuksi.
-
-     != partial( 'contact-us', {header: 'Haluan ilmaisen MirrorMonkey sovelluksen kokeiluversion, joten lisätkää minut testikäyttäjäksi! ', nameLabel: 'Nimi', emailLabel: 'Sähköpostiosoite', messageContent: 'Liittyminen ilmaiseen kokeiluun', submitLabel:'Tilaan ilamisen kokeilun'} )
+        span(itemprop='name') MirrorMonkey
+        |:n julkaisu
+    p(itemprop='description') Jos vastasit myöntävästi yhteenkään ylläolevista kysymyksistä, niin sinua ilahduttanee tieto siitä, että teemme paraikaa MirrorMonkey sovellusta hyvinvointiongelmiesi ratkaisuksi.
+    p(itemprop='audience') MirrorMonkey on tarkoitettu tavallisille ihmisille, joilla on vaikeuksia pitää liikunta ja syöminen sekä työnteko ja rentoutuminen tasapainossa.
+    p Yhteen kapeaan hyvinvoinnin osa-alueeseen keskittyviä sovelluksia on useita kuten:
+        span(itemprop='isSimilarTo') &nbsp; Sports Tracker, Food Substitutes, Anti-Depression App jne.
+        span &nbsp;MirrorMonkey eroaa edellisistä siinä, että se tähtää kokonaisvaltaiseen hyvinvointiin ja itsetuntemukseen.
+    p Kokeiluversion julkaisuaikatauluksi on suunniteltu
+        time(itemprop='releaseDate' datetime="2014-04-01") maaliskuun alkua.
+     != partial( 'contact-us', {header: 'Haluan ilmaisen MirrorMonkey sovelluksen kokeiluversion! ', nameLabel: 'Nimi', emailLabel: 'Sähköpostiosoite', messageContent: 'Liittyminen ilmaiseen kokeiluun', submitLabel:'Tilaan ilamisen kokeilun'} )
 
