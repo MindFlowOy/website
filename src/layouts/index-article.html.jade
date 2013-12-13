@@ -1,8 +1,13 @@
 
 if document.title
     header
-        h1
-            |#{document.title}
+
+        if document.title == 'MirrorMonkey'
+            h1.mirrormonkey
+                |#{document.title}
+        else
+            h1
+                |#{document.title}
 
         if document.tags
             p.tags!= document.tags.join(' | ')

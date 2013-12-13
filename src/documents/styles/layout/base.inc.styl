@@ -103,7 +103,6 @@ header#top
             //transition: all 2s
             font-weight 200
             font-weight 200
-            text-transform uppercase
             // max 5 menuitems
             column(1/5 3/4)
             color green
@@ -111,10 +110,6 @@ header#top
             text-align center
             background #fff
             line-height 30px
-        a.mirrormonkey
-            text-transform none
-            font-variant small-caps
-            font-size large
         a:hover
             font-weight 400
             text-decoration underline
@@ -124,6 +119,12 @@ header#top
             pointer-events none
             text-decoration none
             cursor default
+
+a.mirrormonkey, h1.mirrormonkey
+    font-variant small-caps
+a.mirrormonkey
+    font-size large
+
 footer
     width 100%
     background #6c5e5b
