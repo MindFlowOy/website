@@ -190,8 +190,7 @@ docpadConfig =
                     enabled: true
                  grunt:
                     enabled: false
-                ignoreincludes:
-                    ignoreExtensions: ['inc', 'abc']
+
 
         static:
             templateData:
@@ -207,7 +206,7 @@ docpadConfig =
                     gruntTasks: ["default"]
 
                 ignoreincludes:
-                    ignoreExtensions: ['inc', 'abc']
+                    ignoreExtensions: ['inc']
 
 
 

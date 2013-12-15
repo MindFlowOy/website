@@ -32,6 +32,9 @@
     padding 20px 0
     &.slogan
         background rgba(255, 255, 255, .5)
+        padding-left 5%
+        padding-right 5%
+        margin-bottom 20px
         h1, h2, h3, h4, h5
             color dark-green
 
@@ -126,10 +129,10 @@ section
 #content-3
     color black
     min-height 90%
-    background simple-gradient(#969061, strength = 30%)
+    background simple-gradient(spring-forever, strength = 30%)
 
 #content-5
-    background simple-gradient(#996146, strength = 30%)
+    background simple-gradient(cu2, strength = 30%)
 
 
 // 4 columns
@@ -151,7 +154,7 @@ section
 @media (max-width: 480px)
     .full-bg
         &.slogan
-            background none
+            background noise-gradient(white, cashmir, imagePath = '/img/noise.png')
     section
         article:nth-child(1)
             padding-bottom inherit
