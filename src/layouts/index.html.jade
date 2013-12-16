@@ -16,6 +16,8 @@ html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignor
 
             link(rel="shortcut icon", href="favicon.ico")
 
+
+
             base(href="/")
             meta(charset='utf-8')
             meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
@@ -26,8 +28,9 @@ html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignor
             meta(name="apple-mobile-web-status-bar-style", content="black-translucent")
 
             //- Set the viewport width to device width for mobile
-            meta(content='width=device-width, initial-scale=1,', name='viewport') or:
-            //- meta(content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no', name='viewport')
+            //- meta(content='width=device-width, initial-scale=1,', name='viewport')
+            //- or:
+            meta(content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no', name='viewport')
 
             != getBlock("meta").toHTML()
 
@@ -37,12 +40,14 @@ html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignor
             //- Google fonts
             link(href='//fonts.googleapis.com/css?family=Kaushan+Script&subset=latin-ext', rel='stylesheet')
 
+
             //- Main css
             //-!= getBlock("styles").add(["/css/animation.css", "/styles/index.css"]).toHTML()
             != getBlock("styles").add(site.styles).toHTML()
             //-!= getBlock("styles").add(getGruntedStyles()).toHTML()
 
             //if lt IE 9
+                  script(src='/js/vendor/html5shiv-printshiv.min.js')
                   script(src='/js/vendor/selectivizr-1.0.2.min.js')
 
             //- angular
@@ -54,9 +59,11 @@ html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignor
 
       body(data-mf-spy-scroll-to='true')
 
-            //if lt IE 9
-                  .browsehappy
-                      p
+            //if lt IE 8
+                .browsehappy
+                    br
+                    hr
+                    span
                           | You are using an
                           strong &nbsp;outdated&nbsp;
                           | browser. Please
@@ -64,6 +71,9 @@ html(class="no-js", lang="en", xmlns:ng="http://angularjs.org", xmlns:app="ignor
                           | or
                           a(href='http://www.google.com/chromeframe/?redirect=true', target='_blank') &nbsp;activate Google Chrome Frame&nbsp;
                           | to improve your experience.
+                    br
+                    hr
+                    br
 
             != content
 

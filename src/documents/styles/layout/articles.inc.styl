@@ -37,7 +37,10 @@
         margin-bottom 20px
         h1, h2, h3, h4, h5
             color dark-green
-
+html.lt-ie9
+    .panel
+        &.slogan
+            background white
 
 
 .c1-2.bubble-l
@@ -46,6 +49,11 @@
 .c1-2.bubble-r
         bubble('left', light)
         margin: 30px auto 0px
+
+html.lt-ie9
+    .c1-2.bubble-l, .c1-2.bubble-r
+        background light
+        width: 45%
 
 .call-to-action
     simple-button(action-c, large)
@@ -131,8 +139,17 @@ section
     min-height 90%
     background simple-gradient(spring-forever, strength = 30%)
 
+html.lt-ie9
+    #content-3
+        background spring-forever
+
 #content-5
     background simple-gradient(cu2, strength = 30%)
+
+html.ti-e9
+    #content-5
+        background cu2
+
 
 
 // 4 columns
