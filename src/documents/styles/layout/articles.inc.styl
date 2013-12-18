@@ -1,11 +1,15 @@
-
 .full-bg
-    background-size cover
-    min-height 75%
-    &.slogan
-        padding-top header-height
-        background url(/img/slogan-bg.jpg) no-repeat center 100px fixed
-        background-size: cover
+        min-height 75%
+        &.slogan
+            padding-top header-height
+
+@media (min-width: 481px)
+    .full-bg
+        background-size cover
+        &.slogan
+            background url(/img/slogan-bg.jpg) no-repeat center 100px fixed
+            background-size: cover
+
 
 
 .content

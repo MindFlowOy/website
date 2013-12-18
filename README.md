@@ -10,7 +10,6 @@
 
 - [] outbound: our contacts, pricing etc
 
-
 At the time beeing this more like skeleton of web project, but it should be easy and fast to add new pages/functionality.
 
 ## There are many technologies involved to this project:

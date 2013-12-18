@@ -1,7 +1,7 @@
 {
-  "name": "Mind Flow web pages",
+  "name": "MindFlow-web",
   "version": "0.1.0",
-  "description": "Project to generate Mind Flow Oy webpages by Docpad",
+  "description": "Project to generate MindFlow Oy webpages by Docpad",
   "author": "VLi <vli@iki.fi>",
   "private": true,
   "domains": [
@@ -17,7 +17,7 @@
     "npm": "1.3"
   },
   "dependencies": {
-    "docpad": "~6.57.2",
+    "docpad": "~6.58.2",
     "docpad-plugin-marked": "~2.1.2",
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-coffeelint": "~2.1.1",
@@ -29,7 +29,7 @@
     "docpad-plugin-umd": "~2.1.0",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-ignoreincludes": "~2.0.0",
-    "docpad-plugin-ghpages": "~2.4.0",
+    "docpad-plugin-ghpages": "~2.4.1",
     "docpad-plugin-livereload": "~2.5.4"
   },
   "main": "node_modules/docpad/bin/docpad-server",
