@@ -81,6 +81,11 @@ So not the most simplest stack for static web pages - but once you know them you
 
                 ./scripts/e2e.sh
 
+## known issues
+
+Sometimes DocPad server wasn't giving any reply on MacOSX 10.9.1 - looks like working after "WARNING: soft rlimits too low" fix (fixes MongoDB issue as well)
+
+            >launchctl limit maxfiles 1024 1024
 
 
 
