@@ -22,15 +22,12 @@
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-coffeelint": "~2.1.1",
     "docpad-plugin-partials": "~2.8.1",
-    "docpad-plugin-text": "~2.3.2",
     "docpad-plugin-coffeescript": "~2.2.3",
     "docpad-plugin-axis": "~2.0.1",
     "docpad-plugin-stylus": "~2.5.0",
-    "docpad-plugin-umd": "~2.1.0",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-ignoreincludes": "~2.0.0",
-    "docpad-plugin-ghpages": "~2.4.1",
-    "docpad-plugin-livereload": "~2.5.4"
+    "docpad-plugin-ghpages": "~2.4.1"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {

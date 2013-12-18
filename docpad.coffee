@@ -140,7 +140,7 @@ docpadConfig =
 
     # Here we can define handlers for events that DocPad fires
     # You can find a full listing of events on the DocPad Wiki
-    #
+    ###
     events:
 
             # Server Extend
@@ -164,6 +164,7 @@ docpadConfig =
                             else
                                     next()
 
+    ###
 
     # =================================
     # Environment
@@ -186,8 +187,6 @@ docpadConfig =
                     , "/js/vendor/placeholders.min.js" ]
 
             plugins:
-                livereload:
-                    enabled: true
                  grunt:
                     enabled: false
 
@@ -197,10 +196,6 @@ docpadConfig =
                 site:
                     styles: [ "/styles/index.css" ]
                     scripts: [ "/scripts/all.min.js" ]
-
-            plugins:
-                livereload:
-                    enabled: false
 
                 grunt:
                     gruntTasks: ["default"]
