@@ -98,8 +98,8 @@ section
     >p
         padding-bottom 20px
     color light-green
-    img.logo
-        height 0
+    .name
+        padding-top 30px
     i.fa.fa
         color lighten(green, 20%)
         padding-bottom 10px
@@ -123,11 +123,18 @@ section
         font-family helvetica
     .name
         padding-top 5px
-    img
+    .img
         width 200px
         height 200px
         border-radius 50%
         border 5px solid light-green
+        display inline-block
+        &.ari
+            background url(/img/team/ari.jpg) no-repeat center
+        &.taina
+            background url(/img/team/taina.jpg) no-repeat center
+        &.vesa
+            background url(/img/team/vesa.jpg) no-repeat center
     a
         text-decoration none
         color action-c

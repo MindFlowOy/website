@@ -73,6 +73,7 @@ html, body
     height 100%
     background site_background
 
+
 header#top
     //opacity 0.7 not working
     background white
@@ -87,6 +88,9 @@ header#top
     a.logo
         absolute: top left
         text-decoration none
+        img
+            width 100px
+            height 100px
     .language
         absolute top right
         right 20px
@@ -133,6 +137,14 @@ header#top
             pointer-events none
             text-decoration none
             cursor default
+//IE8 fix to show logo
+.lt-ie9
+    header#top
+         a.logo
+            img
+                width auto
+                border none
+
 
 a.mirrormonkey, h1.mirrormonkey
     font-variant small-caps
