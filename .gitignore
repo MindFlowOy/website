@@ -19,3 +19,5 @@ out
 .db
 
 /.docpad.db
+
+.DS_Store
