@@ -21,3 +21,5 @@ out
 /.docpad.db
 
 .DS_Store
+
+src/files/.DS_Store
